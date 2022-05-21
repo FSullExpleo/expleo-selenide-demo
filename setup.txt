@@ -1,9 +1,15 @@
 1. Pause synching for 1 hour
-2. mvn archetype:generate -DarchetypeGroupId=com.expleogroup.automation -DarchetypeArtifactId=selenide-demo
-	-DarchetypeGroupId		=	com.expleogroup.automation 
-	-DarchetypeArtifactId	=	selenide-demo
-3. mvn idea:idea
-4. In notepad++, open the pom.xml and insert dependency from selenide.org quickstart
+
+2.1 "maven in 5 minutes" 
+mvn archetype:generate -DgroupId=com.expleo.automation -DartifactId=selenide-demo -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+2.2 cd selenide-demo
+
+2.3 mvn package
+
+2.4 Open IDE and project
+
+2.5 Open the pom.xml and insert dependency from selenide.org quickstart
 
     <dependency>
       <groupId>com.codeborne</groupId>
@@ -11,29 +17,20 @@
       <version>6.5.0</version>
       <scope>test</scope>
     </dependency>
-	
-5. mvn clean install
-6. mvn dependency:resolve
-7. In IntelliJ
+
+2.6 mvn clean install
+
+2.7 mvn dependency:resolve
+
+3. In IntelliJ
 	JDK
 	Actions on save
 	Style
 	Plugins > Project Lombok
+	Enable annotation processing
+	Enable maven build
 	
-Demo: 
-1. Selenium
-	Steps involved
-	a) Decide in advance which browsers are to be tested and locate drivers for each
-	b) Have a switch statement in code to choose drivers
-	c) Add stability using implicit or explicit waits
-	d) Open browser
-	e) Move element into view to interact with it
-	f) Perform command (verbosely)
-	h) Perform assertion (verbosely)
-	i) Capture screenshot
-2. WebDriverManager
-3. Selenide failing
-4. Selenide passing
+
 
 
 

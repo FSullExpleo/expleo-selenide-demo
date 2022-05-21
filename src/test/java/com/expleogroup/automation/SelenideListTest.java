@@ -1,5 +1,6 @@
 package com.expleogroup.automation;
 
+import static com.codeborne.selenide.CollectionCondition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
@@ -17,6 +18,6 @@ public class SelenideListTest {
 
     open("https://selenide.org");
 
-    $$("div.quicklinks > div > ul > li").shouldHave(CollectionCondition.size(4));
+    $$("div.quicklinks > div > ul > li").shouldHave(size(4));
   }
 }
