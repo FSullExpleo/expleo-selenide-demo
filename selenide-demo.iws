@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae152307-4035-44f7-be90-f67a4e415b98" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/selenide-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/selenide-demo.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SelenideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SelenideTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="ae152307-4035-44f7-be90-f67a4e415b98" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
