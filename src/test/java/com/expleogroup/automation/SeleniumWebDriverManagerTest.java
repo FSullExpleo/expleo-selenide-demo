@@ -1,5 +1,6 @@
 package com.expleogroup.automation;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,17 +11,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class SeleniumTest {
+public class SeleniumWebDriverManagerTest {
 
   @Test
-  public void expleoSeleniumTest() {
+  public void expleoSeleniumWebDriverManagerTest() {
 
     // arrange
-    String browser = "chrome";
-    System.setProperty("webdriver.chrome.driver", "C:\\Temp\\webdrivers\\chromedriver.exe");
+    String browser = "edge";
+    WebDriverManager.chromedriver().setup();
     WebDriver driver = new ChromeDriver();
     if ("edge".equals(browser)) {
-      System.setProperty("webdriver.edge.driver", "C:\\Temp\\webdrivers\\msedgedriver.exe");
+      WebDriverManager.edgedriver().setup();
       driver = new EdgeDriver();
     }
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -39,6 +40,7 @@ public class SeleniumTest {
             .findElement(By.cssSelector("h4"))
             .getText()
             .contains("It's extremely easy to start using Selenide."));
+
     driver.quit();
   }
 }
