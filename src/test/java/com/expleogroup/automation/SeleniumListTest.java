@@ -1,5 +1,7 @@
 package com.expleogroup.automation;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,10 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class SeleniumTest {
+public class SeleniumListTest {
 
   @Test
-  public void expleoSeleniumTest() {
+  public void expleoSeleniumListTest() {
 
     // set driver
     String browser = "chrome";
@@ -26,19 +28,11 @@ public class SeleniumTest {
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     driver.get("https://selenide.org");
 
-    WebElement element = driver.findElement(By.cssSelector("div.short.howto > div > a > img"));
-    Actions actions = new Actions(driver);
-    actions.moveToElement(element);
-    actions.perform();
-    driver.findElement(By.cssSelector("div.short.howto > div > a > img")).click();
+    List<WebElement> elements = new ArrayList<>();
+    elements = driver.findElements(By.cssSelector("div.quicklinks > div > ul > li"));
 
     // assert
-    Assert.assertTrue(
-        "Not at 'Quick Start' page",
-        driver
-            .findElement(By.cssSelector("h4"))
-            .getText()
-            .contains("It's extremely easy to start using Selenide."));
+    Assert.assertTrue(c, elements.size() == 5);
 
     driver.quit();
   }
