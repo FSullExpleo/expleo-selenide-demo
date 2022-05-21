@@ -15,7 +15,7 @@ public class SeleniumTest {
   @Test
   public void expleoSeleniumTest() {
 
-    // set driver
+    // choose browser and set driver
     String browser = "chrome";
     System.setProperty("webdriver.chrome.driver", "C:\\Temp\\webdrivers\\chromedriver.exe");
     WebDriver driver = new ChromeDriver();
@@ -23,13 +23,22 @@ public class SeleniumTest {
       System.setProperty("webdriver.edge.driver", "C:\\Temp\\webdrivers\\msedgedriver.exe");
       driver = new EdgeDriver();
     }
+
+    // set timeout
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+    // open browser
     driver.get("https://selenide.org");
 
+    // find element
     WebElement element = driver.findElement(By.cssSelector("div.short.howto > div > a > img"));
+
+    // move to element to enable interaction
     Actions actions = new Actions(driver);
     actions.moveToElement(element);
     actions.perform();
+
+    // perform action
     driver.findElement(By.cssSelector("div.short.howto > div > a > img")).click();
 
     // assert
@@ -40,6 +49,7 @@ public class SeleniumTest {
             .getText()
             .contains("It's extremely easy to start using Selenide."));
 
+    // close browser
     driver.quit();
   }
 }

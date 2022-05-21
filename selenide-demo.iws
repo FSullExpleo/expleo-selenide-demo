@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae152307-4035-44f7-be90-f67a4e415b98" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/selenide-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/selenide-demo.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SelenideListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SelenideListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SelenideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SelenideTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +276,7 @@
       <recent name="com.expleogroup.automation" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SelenideTest.expleoSelenideTest">
+  <component name="RunManager" selected="JUnit.SelenideListTest.expleoSelenideListTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -285,6 +289,47 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelenideListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenide-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.expleogroup.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.expleogroup.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.expleogroup.automation.SelenideListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelenideListTest.expleoSelenideListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selenide-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.expleogroup.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.expleogroup.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.expleogroup.automation.SelenideListTest" />
+      <option name="METHOD_NAME" value="expleoSelenideListTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -310,7 +355,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideTest.expleoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumListTest.expleoSeleniumListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="selenide-demo" />
       <extension name="coverage">
         <pattern>
@@ -319,29 +364,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.expleogroup.automation" />
-      <option name="MAIN_CLASS_NAME" value="com.expleogroup.automation.SelenideTest" />
-      <option name="METHOD_NAME" value="expleoTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumTest.expleoSeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="selenide-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.expleogroup.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.expleogroup.automation" />
-      <option name="MAIN_CLASS_NAME" value="com.expleogroup.automation.SeleniumTest" />
-      <option name="METHOD_NAME" value="expleoSeleniumTest" />
+      <option name="MAIN_CLASS_NAME" value="com.expleogroup.automation.SeleniumListTest" />
+      <option name="METHOD_NAME" value="expleoSeleniumListTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -386,10 +410,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SelenideListTest.expleoSelenideListTest" />
+        <item itemvalue="JUnit.SelenideListTest" />
+        <item itemvalue="JUnit.SeleniumListTest.expleoSeleniumListTest" />
         <item itemvalue="JUnit.SelenideTest.expleoSelenideTest" />
         <item itemvalue="JUnit.SeleniumWebDriverManagerTest.expleoSeleniumWebDriverManagerTest" />
-        <item itemvalue="JUnit.SeleniumTest.expleoSeleniumTest" />
-        <item itemvalue="JUnit.SelenideTest.expleoTest" />
       </list>
     </recent_temporary>
   </component>

@@ -28,10 +28,10 @@ public class SeleniumListTest {
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     driver.get("https://selenide.org");
 
-    List<WebElement> elements = new ArrayList<>();
+    // capture list of elements
+    List<WebElement> elements;
     elements = driver.findElements(By.cssSelector("div.quicklinks > div > ul > li"));
 
-    // assert
     Assert.assertTrue("Incorrect number of social media links", elements.size() == 5);
 
     driver.quit();

@@ -16,9 +16,8 @@ public class SelenideListTest {
   public void expleoSelenideListTest() {
 
     open("https://selenide.org");
-    $("div.short.howto > div > a > img").scrollIntoView(true).click();
 
     // lists
-    $$("div.quicklinks > div > ul > li").shouldHave(CollectionCondition.size(5));
+    $$("div.quicklinks > div > ul > li").shouldHave(CollectionCondition.size(4));
   }
 }

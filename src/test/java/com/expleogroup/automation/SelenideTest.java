@@ -12,14 +12,11 @@ public class SelenideTest {
   @Test
   public void expleoSelenideTest() {
 
-    // arrange
     // Configuration.browser = "edge";
     open("https://selenide.org");
 
-    // act
     $("div.short.howto > div > a > img").scrollIntoView(true).click();
 
-    // assert
     $("h4").shouldHave(text("It's extremely easy to start using Selenode."));
   }
 }
