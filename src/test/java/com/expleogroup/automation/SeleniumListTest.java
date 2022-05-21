@@ -32,7 +32,7 @@ public class SeleniumListTest {
     elements = driver.findElements(By.cssSelector("div.quicklinks > div > ul > li"));
 
     // assert
-    Assert.assertTrue(c, elements.size() == 5);
+    Assert.assertTrue("Incorrect number of social media links", elements.size() == 5);
 
     driver.quit();
   }
