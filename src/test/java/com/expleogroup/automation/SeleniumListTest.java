@@ -17,14 +17,8 @@ public class SeleniumListTest {
   @Test
   public void expleoSeleniumListTest() {
 
-    // set driver
-    String browser = "chrome";
     System.setProperty("webdriver.chrome.driver", "C:\\Temp\\webdrivers\\chromedriver.exe");
     WebDriver driver = new ChromeDriver();
-    if ("edge".equals(browser)) {
-      System.setProperty("webdriver.edge.driver", "C:\\Temp\\webdrivers\\msedgedriver.exe");
-      driver = new EdgeDriver();
-    }
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     driver.get("https://selenide.org");
 
@@ -33,7 +27,6 @@ public class SeleniumListTest {
     elements = driver.findElements(By.cssSelector("div.quicklinks > div > ul > li"));
 
     Assert.assertTrue("Incorrect number of social media links", elements.size() == 5);
-
     driver.quit();
   }
 }

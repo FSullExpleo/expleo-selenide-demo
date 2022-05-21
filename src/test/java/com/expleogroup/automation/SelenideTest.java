@@ -12,7 +12,7 @@ public class SelenideTest {
   @Test
   public void expleoSelenideTest() {
 
-    // Configuration.browser = "edge";
+    Configuration.browser = "edge";
     open("https://selenide.org");
 
     $("div.short.howto > div > a > img").scrollIntoView(true).click();

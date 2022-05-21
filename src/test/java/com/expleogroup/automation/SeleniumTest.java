@@ -30,7 +30,7 @@ public class SeleniumTest {
     // open browser
     driver.get("https://selenide.org");
 
-    // find element
+    // find 'quick start' element
     WebElement element = driver.findElement(By.cssSelector("div.short.howto > div > a > img"));
 
     // move to element to enable interaction

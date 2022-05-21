@@ -17,7 +17,6 @@ public class SelenideListTest {
 
     open("https://selenide.org");
 
-    // lists
     $$("div.quicklinks > div > ul > li").shouldHave(CollectionCondition.size(4));
   }
 }
