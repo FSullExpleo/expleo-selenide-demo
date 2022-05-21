@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae152307-4035-44f7-be90-f67a4e415b98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumWebDriverManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenide-demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/selenide-demo.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenide-demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/selenide-demo.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/expleogroup/automation/SeleniumTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -275,7 +272,7 @@
       <recent name="com.expleogroup.automation" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SeleniumWebDriverManagerTest.expleoSeleniumWebDriverManagerTest">
+  <component name="RunManager" selected="JUnit.SelenideTest.expleoSelenideTest">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -389,8 +386,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeleniumWebDriverManagerTest.expleoSeleniumWebDriverManagerTest" />
         <item itemvalue="JUnit.SelenideTest.expleoSelenideTest" />
+        <item itemvalue="JUnit.SeleniumWebDriverManagerTest.expleoSeleniumWebDriverManagerTest" />
         <item itemvalue="JUnit.SeleniumTest.expleoSeleniumTest" />
         <item itemvalue="JUnit.SelenideTest.expleoTest" />
       </list>

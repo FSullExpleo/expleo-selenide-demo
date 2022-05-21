@@ -39,6 +39,7 @@ public class SeleniumTest {
             .findElement(By.cssSelector("h4"))
             .getText()
             .contains("It's extremely easy to start using Selenide."));
+
     driver.quit();
   }
 }
